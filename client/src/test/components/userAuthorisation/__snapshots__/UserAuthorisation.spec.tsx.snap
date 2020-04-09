@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    Log in Page
+  </div>
+  <div>
+    <div>
+      <div>
+        Test Messsage
+      </div>
+      <div>
+        Email
+      </div>
+      <input
+        onChange={[Function]}
+        type="text"
+      />
+    </div>
+    <div>
+      <div>
+        Password
+      </div>
+      <input
+        onChange={[Function]}
+        type="password"
+      />
+    </div>
+  </div>
+  <input
+    onClick={[Function]}
+    type="button"
+    value="Log in"
+  />
+  <a
+    aria-current={null}
+    href="/registration"
+    onClick={[Function]}
+  >
+    Sign in
+  </a>
+</div>
+`;

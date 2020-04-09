@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-AxjAm sc-AxirZ hameIv"
+  style={
+    Object {
+      "backgroundColor": "#f16d69",
+    }
+  }
+>
+  <input
+    checked={false}
+    className="sc-AxhCb jbKKYH"
+    onClick={[Function]}
+    type="checkbox"
+  />
+  <div
+    className="sc-AxjAm sc-AxiKw ipfOCv"
+  >
+    Test Text
+  </div>
+</div>
+`;

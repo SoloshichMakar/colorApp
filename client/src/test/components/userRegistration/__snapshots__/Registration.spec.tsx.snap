@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    Registration Page
+  </div>
+  <div>
+    <div
+      id="message"
+    >
+      Test Messsage
+    </div>
+    <div>
+      <div>
+        Email
+      </div>
+      <input
+        id="email"
+        name="email"
+        onChange={[Function]}
+        type="text"
+        value="Test@mail.com"
+      />
+    </div>
+    <div>
+      <div>
+        Password
+      </div>
+      <input
+        id="password"
+        onChange={[Function]}
+        type="password"
+        value="Test Password"
+      />
+      <div>
+        Confirm Password
+      </div>
+      <input
+        id="confirmPassword"
+        onChange={[Function]}
+        type="password"
+        value="Test Password"
+      />
+    </div>
+  </div>
+  <input
+    onClick={[Function]}
+    type="button"
+    value="addUser"
+  />
+</div>
+`;

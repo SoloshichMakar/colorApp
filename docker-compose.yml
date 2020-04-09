@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: taskdb
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./colorappserver-db:/var/lib/postgresql/data
+
+  server-app:
+    build: server/
+    image: color-app-server
+    depends_on:
+      - postgres
+    ports:
+    - "4000:4000"
+    
+  client:
+    build: client/
+    image: color-app-client
+    depends_on:
+      - server-app
+    ports:
+      - "3000:3000"

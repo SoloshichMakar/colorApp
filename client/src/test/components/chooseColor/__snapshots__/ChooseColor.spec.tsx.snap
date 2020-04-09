@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-AxjAm iirJRb"
+>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#f16d69"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#f16d69",
+        }
+      }
+    />
+  </label>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#f279a2"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#f279a2",
+        }
+      }
+    />
+  </label>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#9170cb"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#9170cb",
+        }
+      }
+    />
+  </label>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#5eb3f6"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#5eb3f6",
+        }
+      }
+    />
+  </label>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#67d7e5"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#67d7e5",
+        }
+      }
+    />
+  </label>
+  <label
+    className="sc-AxirZ bgLfMu choose_colors__container"
+  >
+    <input
+      checked={false}
+      className="sc-AxhCb jQeLEK"
+      name="choose_color"
+      onClick={[Function]}
+      type="radio"
+      value="#ffe083"
+    />
+    <span
+      className="sc-AxiKw grTOxR color_checkmark"
+      style={
+        Object {
+          "backgroundColor": "#ffe083",
+        }
+      }
+    />
+  </label>
+</div>
+`;
