@@ -1,6 +1,10 @@
-FROM node:alpine
-WORKDIR /usr/app/front
-EXPOSE 3000
-COPY ./ ./
-RUN yarn install
-CMD ["yarn", "start"]
+FROM node:12-alpine as build
+WORKDIR /app
+COPY package.json /app/package.json
+RUN yarn install --production=true
+COPY . /app
+RUN yarn build
+FROM nginx:1.16.0-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
