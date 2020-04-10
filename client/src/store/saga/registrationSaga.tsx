@@ -1,5 +1,5 @@
 import {takeLatest, put} from "redux-saga/effects";
-import {ASYNC_CREATE_USER, CREATE_USER, ERROR} from "../../utils/Constants";
+import {ASYNC_CREATE_USER, CREATE_USER, ERROR_REGISTRATION} from "../../utils/Constants";
 import {Api} from '../api/Api';
 import {IActionLogin} from "../types/types";
 
@@ -11,7 +11,7 @@ export function* userRegister(action: IActionLogin) {
             yield put({type: CREATE_USER, serverResponse: serverResponse});
         }
     } catch (e) {
-        yield put({type: ERROR, errorMessage: e.message});
+        yield put({type: ERROR_REGISTRATION, errorMessage: e.message});
     }
 }
 

@@ -1,11 +1,12 @@
 import {IActionRegistration, IStateRegistration } from "../types/types";
-import {TEXT_EMAIL_CHANGE, TEXT_PASSWORD_CHANGE, CREATE_USER, TEXT_CONFIRM_PASSWORD_CHANGE, ERROR} from "../../utils/Constants";
+import {TEXT_EMAIL_CHANGE, TEXT_PASSWORD_CHANGE, CREATE_USER, TEXT_CONFIRM_PASSWORD_CHANGE, ERROR_REGISTRATION, REDIRECT} from "../../utils/Constants";
 
 const initialState: IStateRegistration = {
     email: '',
     password: '',
     confirmPassword: '',
-    message: ''
+    message: '',
+    isCreated: false
 };
 
 export default function RegistrationReducer(state: IStateRegistration = initialState, action:IActionRegistration): IStateRegistration {
@@ -37,15 +38,22 @@ export default function RegistrationReducer(state: IStateRegistration = initialS
                 message: 'User: ' + state.email + ' is created',
                 email: '',
                 password: '',
-                confirmPassword:''
+                confirmPassword:'',
+                isCreated: true
             };
-        case ERROR:
+        case ERROR_REGISTRATION:
             if(typeof action.errorMessage === 'string') {
                 return {
                     ...state,
-                    message: action.errorMessage
+                    message: action.errorMessage,
+                    isCreated: false
                 };
             }
+        case REDIRECT:
+                return {
+                    ...state,
+                    isCreated: false
+                }
         default:
             return state;
     }

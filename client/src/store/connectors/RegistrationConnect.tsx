@@ -5,7 +5,8 @@ import {
     actionPasswordChange,
     actionEmailChange,
     actionPasswordConfirmChange,
-    actionErrorMessage
+    actionErrorMessage,
+    actionUserIsCreateRiderect
 } from '../../actions/RegistartionAction';
 import {IStateRegistration} from "../types/types";
 
@@ -15,7 +16,8 @@ function mapStateToProps(state: any) {
         email: state.RegistrationReducer.email,
         password: state.RegistrationReducer.password,
         confirmPassword: state.RegistrationReducer.confirmPassword,
-        message: state.RegistrationReducer.message
+        message: state.RegistrationReducer.message,
+        isCreated: state.RegistrationReducer.isCreated
     }
 }
 
@@ -35,6 +37,9 @@ function mapDispatchToProps(dispatch: Function) {
         },
         error(errorMessage: string) {
             dispatch(actionErrorMessage(errorMessage))
+        },
+        userIsCreate() {
+            dispatch(actionUserIsCreateRiderect())
         }
     }
 }

@@ -88,8 +88,6 @@ describe('Registration click events ', () => {
         await fetchMock.flush();
         await wrapper.update();
         expect(store.getState().RegistrationReducer.message).toEqual(`User: ${email} is created`);
-        container = wrapper.find('#message');
-        expect(container.html()).toEqual('<div id="message">User: test@mail.com is created</div>');
     });
 
 });

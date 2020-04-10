@@ -1,40 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="login_main"
+>
   <div>
     Log in Page
   </div>
-  <div>
-    <div>
-      <div>
+  <div
+    className="login_main__data"
+  >
+    <div
+      className="login_main__message_box"
+    >
+      <div
+        className="login_main__message_label"
+      >
         Test Messsage
       </div>
-      <div>
+    </div>
+    <div
+      className="login_main__email_box"
+    >
+      <div
+        className="login_main__email_label"
+      >
         Email
       </div>
       <input
+        className="login_main__email_input"
         onChange={[Function]}
         type="text"
       />
     </div>
-    <div>
-      <div>
+    <div
+      className="login_main__password_box"
+    >
+      <div
+        className="login_main__password_label"
+      >
         Password
       </div>
       <input
+        className="login_main__password_input"
         onChange={[Function]}
         type="password"
       />
     </div>
   </div>
   <input
+    className="login_main__login_button"
     onClick={[Function]}
     type="button"
     value="Log in"
   />
   <a
     aria-current={null}
+    className="login_main__registration_link"
     href="/registration"
     onClick={[Function]}
   >

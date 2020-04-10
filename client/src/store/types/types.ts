@@ -36,7 +36,8 @@ export interface IStateRegistration {
   email: string,
   password: string,
   confirmPassword: string,
-  message: string
+  message: string,
+  isCreated: boolean
 }
 
 export interface IActionLogin {

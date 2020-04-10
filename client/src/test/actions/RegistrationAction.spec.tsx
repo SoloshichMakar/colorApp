@@ -7,7 +7,7 @@ import {
 } from '../../actions/RegistartionAction';
 
 import {
-    ASYNC_CREATE_USER, ERROR,
+    ASYNC_CREATE_USER, ERROR_REGISTRATION,
     TEXT_CONFIRM_PASSWORD_CHANGE,
     TEXT_EMAIL_CHANGE,
     TEXT_PASSWORD_CHANGE
@@ -39,6 +39,6 @@ describe('test Registration actions', () => {
     it('should make action error message', function () {
         const testMessage = 'Test error message';
         const result = actionErrorMessage(testMessage);
-        expect(result).toEqual({type:ERROR, errorMessage:testMessage});
+        expect(result).toEqual({type:ERROR_REGISTRATION, errorMessage:testMessage});
     });
 });

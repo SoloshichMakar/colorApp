@@ -1,8 +1,9 @@
 import {
-    ASYNC_CREATE_USER, ERROR,
+    ASYNC_CREATE_USER, ERROR_REGISTRATION,
     TEXT_CONFIRM_PASSWORD_CHANGE,
     TEXT_EMAIL_CHANGE,
-    TEXT_PASSWORD_CHANGE
+    TEXT_PASSWORD_CHANGE,
+    REDIRECT
 } from "../utils/Constants";
 
 export function actionEmailChange(email: string) {
@@ -39,7 +40,13 @@ export function actionCreateUser(email: string, password:string) {
 
 export function actionErrorMessage(errorMessage: string) {
     return {
-        type: ERROR,
+        type: ERROR_REGISTRATION,
         errorMessage
+    }
+}
+
+export function actionUserIsCreateRiderect() {
+    return {
+        type: REDIRECT
     }
 }

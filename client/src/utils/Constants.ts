@@ -23,7 +23,12 @@ export const ASYNC_GET_DATA: string = "asyncGetData";
 export const TEXT_EMAIL_CHANGE: string = 'textEmailChange';
 export const TEXT_PASSWORD_CHANGE: string = 'textPasswordChange';
 export const USER_CHECK: string = 'userCheck';
+
 export const ERROR: string = 'ERROR';
+export const ERROR_LOGIN: string = 'loginError';
+export const ERROR_REGISTRATION: string = 'registrationError';
+
+export const REDIRECT: string = 'redirect';
 export const ASYNC_USER_CHECK: string = 'asyncUserCheck';
 export const CREATE_USER: string = 'createUser';
 export const ASYNC_CREATE_USER: string = 'asyncCreateUser';

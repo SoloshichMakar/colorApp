@@ -39,21 +39,27 @@ const UserAuthorisation: React.FC<IUserAuthorisationProps> = ({
     return <Redirect to="/" />;
   }
   return (
-    <div>
+    <div className="login_main">
       <div>Log in Page</div>
-      <div>
-        <div>
-          <div>{message}</div>
-          <div>Email</div>
-          <input type="text" onChange={currentTextEmailChange} />
+      <div className="login_main__data">
+        <div className="login_main__message_box">
+          <div className="login_main__message_label">{message}</div>
         </div>
-        <div>
-          <div>Password</div>
-          <input type="password" onChange={currentTextPasswordChange} />
+        <div className="login_main__email_box">
+          <div className="login_main__email_label">Email</div>
+          <input
+            className="login_main__email_input"
+            type="text"
+            onChange={currentTextEmailChange}
+          />
+        </div>
+        <div className="login_main__password_box">
+          <div className="login_main__password_label">Password</div>
+          <input className="login_main__password_input" type="password" onChange={currentTextPasswordChange} />
         </div>
       </div>
-      <input type="button" value="Log in" onClick={UserAuthorisationCheck} />
-      <NavLink to="/registration">Sign in</NavLink>
+      <input className="login_main__login_button" type="button" value="Log in" onClick={UserAuthorisationCheck} />
+      <NavLink className="login_main__registration_link" to="/registration">Sign in</NavLink>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import {TEXT_EMAIL_CHANGE, TEXT_PASSWORD_CHANGE, CREATE_USER, TEXT_CONFIRM_PASSWORD_CHANGE, ERROR} from "../../../utils/Constants";
+import {TEXT_EMAIL_CHANGE, TEXT_PASSWORD_CHANGE, CREATE_USER, TEXT_CONFIRM_PASSWORD_CHANGE, ERROR_REGISTRATION} from "../../../utils/Constants";
 import {IStateRegistration} from "../../../store/types/types";
 import RegistrationReducer from "../../../store/reducers/RegistrationReducer";
 import createSagaMiddleware from "redux-saga";
@@ -21,7 +21,8 @@ describe('Reduscer -- Test UserAuthorisationReducer', () => {
         email: '',
         password: '',
         confirmPassword: '',
-        message: ''
+        message: '',
+        isCreated: false
     };
     it('should change email', function () {
         state = RegistrationReducer(state, {type: TEXT_EMAIL_CHANGE, email: 'test@mail.com'});
@@ -39,7 +40,7 @@ describe('Reduscer -- Test UserAuthorisationReducer', () => {
     });
 
     it('should change message text', function () {
-        state = RegistrationReducer(state, {type: ERROR, errorMessage: 'test'});
+        state = RegistrationReducer(state, {type: ERROR_REGISTRATION, errorMessage: 'test'});
         expect(state.message).toEqual('test')
     });
 

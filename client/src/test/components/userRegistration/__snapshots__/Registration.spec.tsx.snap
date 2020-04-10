@@ -1,21 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="registration_main"
+>
   <div>
     Registration Page
   </div>
-  <div>
+  <div
+    className="registration_main__message_box"
+  >
     <div
+      className="registration_main__message_label"
       id="message"
     >
       Test Messsage
     </div>
-    <div>
-      <div>
+    <div
+      className="registration_main__email_box"
+    >
+      <div
+        className="registration_main__email_label"
+      >
         Email
       </div>
       <input
+        className="registration_main__email_input"
         id="email"
         name="email"
         onChange={[Function]}
@@ -23,31 +33,52 @@ exports[`renders correctly 1`] = `
         value="Test@mail.com"
       />
     </div>
-    <div>
-      <div>
+    <div
+      className="registration_main__password_box"
+    >
+      <div
+        className="registration_main__password_label"
+      >
         Password
       </div>
       <input
+        className="registration_main__password_input"
         id="password"
         onChange={[Function]}
         type="password"
         value="Test Password"
       />
-      <div>
-        Confirm Password
+      <div
+        className="registration_main__confirm_password_box"
+      >
+        <div
+          className="registration_main__confirm_password_label"
+        >
+          Confirm Password
+        </div>
+        <input
+          className="registration_main__confirm_password_input"
+          id="confirmPassword"
+          onChange={[Function]}
+          type="password"
+          value="Test Password"
+        />
       </div>
-      <input
-        id="confirmPassword"
-        onChange={[Function]}
-        type="password"
-        value="Test Password"
-      />
     </div>
   </div>
   <input
+    className="registration_main__create_user_button"
     onClick={[Function]}
     type="button"
     value="addUser"
   />
+  <a
+    aria-current={null}
+    className="registration_main__back_link"
+    href="/login"
+    onClick={[Function]}
+  >
+    Back
+  </a>
 </div>
 `;

@@ -12,7 +12,7 @@ function App() {
           <Switch>
               <Route exact path="/registration" component={RegistrationConnect}/>
               <Route exact path="/login" component={UserAuthorisationConnect}/>
-              <Route path="/" component={TaskContainerConnector}/>
+              <Route exact path="/" component={TaskContainerConnector}/>
           </Switch>
       </BrowserRouter>
   );
